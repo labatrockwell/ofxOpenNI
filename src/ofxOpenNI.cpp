@@ -105,7 +105,9 @@ ofxOpenNI::ofxOpenNI(){
 }
 
 //--------------------------------------------------------------
-bool ofxOpenNI::setup(bool threaded){
+bool ofxOpenNI::setup(bool threaded, int _width, int _height ){
+    width = _width;
+    height = _height;
     return init("", "", threaded);
 }
 

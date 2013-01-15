@@ -51,7 +51,8 @@ public:
 	ofxOpenNI();
 	~ofxOpenNI();
 
-	bool setup(bool threaded = true);
+    // we could use XnResolution here to be a little more careful?
+	bool setup(bool threaded = true, int width = XN_VGA_X_RES, int height = XN_VGA_Y_RES);
     bool setupFromONI(string oniFilePath, bool threaded = true);
     bool setupFromXML(string xmlFilePath, bool threaded = true);
 
