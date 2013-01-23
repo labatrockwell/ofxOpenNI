@@ -227,7 +227,7 @@ bool ofxOpenNI::initDevice(){
             }
         }
 
-        ofLogNotice(LOG_NAME) << "Found" << numDevices << "devices connected";
+        ofLogNotice(LOG_NAME) << "Found " << numDevices << "devices connected";
 
         if(numDevices > 0){
             nRetVal = g_Context.CreateProductionTree(nInfo, g_Device);
