@@ -2775,6 +2775,12 @@ int ofxOpenNI::getDeviceID(){
 	return instanceID;
 }
 
+
+//--------------------------------------------------------------
+float ofxOpenNI::getMaxDepth(){
+    return maxDepth;
+}
+
 /**************************************************************
  *
  *      getters: generator reference (xn::type direct access)

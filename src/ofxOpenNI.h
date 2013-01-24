@@ -288,6 +288,8 @@ public:
 	void cameraToWorld(const vector<ofVec2f>& c, vector<ofVec3f>& w);
 
     int getDeviceID();
+    
+    float getMaxDepth();
 
     xn::Context& getContext();
 	xn::Device& getDevice();
